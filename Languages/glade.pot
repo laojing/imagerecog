@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-18 19:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:556
+msgid "About Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:631
+msgid "Class List"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:89
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:373
+msgid "Create a New Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:196
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:461
+msgid "Export Object"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:57
+msgid "General Logic Controller Designer"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:213
+msgid "Generate Source Code"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:262
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:533
+msgid "Generate State Diagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:484
+msgid "Generator Source Code"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:185
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:448
+msgid "Import Object"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:288
+msgid "Input Output Manual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:605
+msgid "Object List"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:312
+msgid "Object Manual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:101
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:386
+msgid "Open a Exist Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:238
+msgid "Overall Diagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:507
+msgid "OverallDiagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:300
+msgid "Parameter Manual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:596
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:619
+msgid "Project Manager"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:324
+msgid "Project Manual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:412
+msgid "Project Properties"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:142
+msgid "Property of Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:160
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:425
+msgid "Quit Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:113
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:399
+msgid "Save Current Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:125
+msgid "Save to a Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:250
+msgid "Total Diagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:520
+msgid "TotalDiagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:557
+msgid "_About"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:227
+msgid "_Diagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:193
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:462
+msgid "_Export"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:210
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:485
+msgid "_GenSource"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:259
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:534
+msgid "_GenStatePic"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:339
+msgid "_Help"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:285
+msgid "_IOManual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:182
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:449
+msgid "_Import"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:277
+msgid "_Manual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:374
+msgid "_New"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:309
+msgid "_ObjectManual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:387
+msgid "_Open"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:235
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:508
+msgid "_OverallDiagram"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:297
+msgid "_ParamManual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:75
+msgid "_Project"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:321
+msgid "_ProjectManual"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:413
+msgid "_Properties"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:426
+msgid "_Quit"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:400
+msgid "_Save"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:174
+msgid "_Tool"
+msgstr ""
+
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:247
+#: /home/laojing/Projects/TurbLogic/Resource/MainWindow.glade:521
+msgid "_TotalDiagram"
+msgstr ""

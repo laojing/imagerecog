@@ -1,0 +1,139 @@
+/*问题是根据已知点求拟合曲线方程 要求拟合用最小二乘 解方程用列主元高斯消去法 
+使用最小二乘拟合 
+shuru是输入x y的坐标 
+zhenggui是求正规方程系数 
+power是求乘方的 
+zhuyuan是列主元 
+xiaoyuan就是消元过程 
+huidai就是回代求解 
+最后输出的数组c是所求出的拟合方程的系数*/
+
+
+
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#define N 10
+
+void shuru(int n,float x[N],float y[N])
+{
+int i;
+printf("\nPlease input x position:\n");
+for(i = 0;i < n;i++)
+{
+scanf("%f",&x[i]);
+printf("%f",x[i]);
+}
+printf("\nPlease input y position:\n");
+for(i = 0;i < n;i++)
+{
+scanf("%f",&y[i]);
+printf("%f",y[i]);
+}
+printf("\n");
+}
+
+float power(int r,float v)
+{
+float a=1.0;
+while(r--)
+a*=v;
+return a;
+
+}
+
+void zhenggui(int m,float p[N][N+1],float x[N],float y[N])
+{
+int i,j;
+int r;
+float a,b;
+for(r = 0;r <= m;r++)
+for(i = 0;i <= m;i++) 
+{
+a = power(r,x[i]);
+for(j = 0;j <= m;j++)
+p[i][j] +=a;
+}
+for(r = 0;r <= m;r++)
+    for(i = 0;i <= m;i++)
+{ 
+b = power(r,x[i]);  
+p[i][m+1] += y[i]*b;
+}
+for(i = 0;j <= m;i++)
+{
+for (j = 0;j <=m+1;j++)
+{
+printf("%f",p[i][j]);
+}
+printf("\n");
+}
+}
+
+void zhuyuan(int k,int m,float p[N][N+1])
+{
+int t1,t2,i,j;
+double o;
+float q;
+if(o = fabs(p[i][k] > o))
+{
+o = fabs(p[i][k]);
+t2 = i;
+}
+if(o = 0) printf("error!");
+else if(t1 != t2)
+for(j = k;j <= m+1;j++)
+{
+q = p[k][j];
+p[k][j] = p[t2][j];
+p[t2][j] = q;
+}
+
+
+}
+void xiaoyuan(int m,float p[N][N+1])
+{
+int k,i,j;
+for(k = 0;k < m;k++)
+{
+zhuyuan(k,m,p);
+for(i = k+1;i <= m;i++)
+for(j = k+1;j <= m;j++)
+{
+p[k][k] = p[i][k]*p[k][j]/p[k][k];
+p[i][j] = p[i][j] - p[k][k];
+}
+}
+}
+void huidai(int m,float p[N][N+1],float c[N])
+{
+int k,j;
+c[m] = p[m][m+1]/p[m][m];
+for(k = m - 1;k >= 0;k--)
+{
+c[k] = p[k][m+1];
+for(j = k+1;j <= m;j++)
+c[k] = (c[k] - p[k][j]*c[j]);
+c[k] = c[k]/p[k][k];
+}
+
+}
+
+void main()
+{
+int n,m,i;
+float x[N],y[N],c[N];
+float p[N][N+1];
+
+printf("Please input the number of the points:\n");
+scanf("%d",&n);
+printf("\nPlease input the times of fitting:\n");
+scanf("%d",&m);
+printf("\n");
+shuru(n,x,y);
+zhenggui(m,p,x,y);
+xiaoyuan(m,p);
+huidai(m,p,c);
+for(i = 0;i <= m;i++)
+printf("c[%d]=%f\n",i+1,c[i]);
+} 

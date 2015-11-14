@@ -1,2 +1,0 @@
-# imagerecog
-Image Recognize

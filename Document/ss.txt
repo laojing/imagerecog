@@ -1,0 +1,101 @@
+图像二值形态学——腐蚀和膨胀的C语言实现（转载）(2010-06-03 16:20:13) 
+标签： 图像处理杂谈  
+腐蚀的具体操作是：用一个结构元素(一般是3×3的大小)扫描图像中的每一个像素，用结构元素中的每一个像素与其覆盖的像素做“与”操作，如果都为1，则该像素为1，否则为0。
+
+注意：覆盖的像素只有一个，是中心点的那一个。
+
+膨胀的具体操作是：用一个结构元素(一般是3×3的大小)扫描图像中的每一个像素，用结构元素中的每一个像素与其覆盖的像素做“与”操作，如果都为0，则该像素为0，否则为1。
+
+腐蚀的作用是消除物体边界点，使目标缩小，可以消除小于结构元素的噪声点；膨胀的作用是将与物体接触的所有背景点合并到物体中，使目标增大，可添补目标中的空洞。
+
+开运算是先腐蚀后膨胀的过程，可以消除图像上细小的噪声，并平滑物体边界。
+
+闭运算时先膨胀后腐蚀的过程，可以填充物体内细小的空洞，并平滑物体边界。
+
+ 
+
+//腐蚀运算
+02 void erosion(uchar* data, int width, int height)
+03 {
+04     int i, j, index, sum, flag; 
+05     sum = height * width * sizeof(uchar);
+06     uchar *tmpdata = (uchar*)malloc(sum);
+07     memcpy((char*)tmpdata, (char*)data, sum);
+08     for(i = 1;i < height - 1;i++)
+09     {
+10         for(j = 1;j < width - 1;j++)
+11         {
+12             flag = 1;
+13             for(int m = i - 1;m < i + 2;m++)
+14             {
+15                 for(int n = j - 1; n < j + 2;n++)
+16                 {
+17                     //自身及领域中若有一个为0
+18                     //则将该点设为0
+19                     if(tmpdata[i * width + j] == 0
+20                         || tmpdata[m * width + n] == 0)
+21                     {
+22                         flag = 0;
+23                         break;
+24                     }
+25                 }
+26                 if(flag == 0)
+27                 {
+28                     break;
+29                 }
+30             }
+31             if(flag == 0)
+32             {
+33                 data[i * width + j] = 0;
+34             }
+35             else
+36             {
+37                 data[i * width + j] = 255;
+38             }
+39         }
+40     }
+41     free(tmpdata);
+42 }
+43  
+44 //膨胀运算
+45 void dilation(uchar* data, int width, int height)
+46 {
+47     int i, j, index, sum, flag;
+48     sum = height * width * sizeof(uchar);
+49     uchar *tmpdata = (uchar*)malloc(sum);
+50     memcpy((char*)tmpdata, (char*)data, sum);
+51     for(i = 1;i < height - 1;i++)
+52     {
+53         for(j = 1;j < width - 1;j++)
+54         {
+55             flag = 1;
+56             for(int m = i - 1;m < i + 2;m++)
+57             {
+58                 for(int n = j - 1; n < j + 2;n++)
+59                 {
+60                     //自身及领域中若有一个为255
+61                     //则将该点设为255
+62                     if(tmpdata[i * width + j] == 255
+63                         || tmpdata[m * width + n] == 255)
+64                     {
+65                         flag = 0;
+66                         break;
+67                     }
+68                 }
+69                 if(flag == 0)
+70                 {
+71                     break;
+72                 }
+73             }
+74             if(flag == 0)
+75             {
+76                 data[i * width + j] = 255;
+77             }
+78             else
+79             {
+80                 data[i * width + j] = 0;
+81             }
+82         }
+83     }
+84     free(tmpdata);
+85 }

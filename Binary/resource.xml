@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+	<gresource prefix="/">
+		<file>gtk.css</file>
+		<file>init.png</file>
+		<file>icon.png</file>
+		<file>about.png</file>
+	</gresource>
+</gresources>

@@ -1,0 +1,972 @@
+# Chinese translations for turblogic package
+# turblogic 软件包的简体中文翻译.
+# Copyright (C) 2012 THE turblogic'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the turblogic package.
+# Jing Yanjun <laojingsut@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: turblogic 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-18 19:21+0000\n"
+"PO-Revision-Date: 2012-08-30 10:25+0800\n"
+"Last-Translator: Jing Yanjun <laojingsut@gmail.com>\n"
+"Language-Team: Chinese (simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Image Recognize"
+msgstr "图像识别"
+
+msgid "File"
+msgstr "文件"
+
+msgid "New"
+msgstr "新建"
+
+
+
+
+
+
+
+
+
+msgid "InitPic"
+msgstr "原始图像"
+
+msgid "Canny Filter"
+msgstr "Canny滤波"
+
+msgid "Open a New Picture"
+msgstr "打开一个新图片"
+
+msgid "Current Picture:"
+msgstr "当前图片："
+
+msgid "Edge Data"
+msgstr "边界数据"
+
+msgid "Edge Filter"
+msgstr "边界滤波"
+
+msgid "Number"
+msgstr "第"
+
+msgid "Edge"
+msgstr "条边界"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Select Variable"
+msgstr "选择变量"
+
+msgid "Select Folder"
+msgstr "选择目录"
+
+msgid "Next State"
+msgstr "下一状态"
+
+msgid "All"
+msgstr "所有"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Category"
+msgstr "类别"
+
+msgid "State"
+msgstr "状态"
+
+msgid "Add Object"
+msgstr "增加对象"
+
+msgid "Add State Machines"
+msgstr "增加状态机"
+
+msgid "Add State Filters"
+msgstr "增加状态过滤"
+
+msgid "Add Alarm Codes"
+msgstr "增加状态码"
+
+msgid "Add Input Outputs"
+msgstr "增加输入输出"
+
+msgid "Add Parameters"
+msgstr "增加参数"
+
+msgid "Add States"
+msgstr "增加状态"
+
+msgid "Add Deriveds"
+msgstr "增加中间变量"
+
+msgid "Add Manuals"
+msgstr "增加手册"
+
+msgid "Move Up Object"
+msgstr "向上移动"
+
+msgid "Move Down Object"
+msgstr "向下移动"
+
+msgid "Remove Object"
+msgstr "删除"
+
+msgid "Rename Object"
+msgstr "重命名"
+
+msgid "Remove Class"
+msgstr "删除"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Display"
+msgstr "显示"
+
+msgid "Category Name"
+msgstr "总览框图"
+
+msgid "State Name"
+msgstr "状态名称"
+
+msgid "Filter Name"
+msgstr "过滤"
+
+msgid "Alarm Name"
+msgstr "报警名称"
+
+msgid "Variable Conflict"
+msgstr "检查变量冲突"
+
+msgid "Select a Variable"
+msgstr "选择变量"
+
+msgid "Contants"
+msgstr "常数"
+
+msgid "Functions"
+msgstr "函数"
+
+msgid "Check Variable ID Conflicts"
+msgstr "检查变量冲突"
+
+msgid "Overall Diagram"
+msgstr "总览框图"
+
+msgid "Total Diagram"
+msgstr "详细框图"
+
+msgid "Open an Existing Object"
+msgstr "导入一个对象"
+
+msgid "_Cancel"
+msgstr "取消"
+
+msgid "_Open"
+msgstr "打开"
+
+msgid "Change Object Property"
+msgstr "工程属性"
+
+msgid "Create a New Object"
+msgstr "新建一个对象"
+
+msgid "_OK"
+msgstr "确定"
+
+msgid "Simulation"
+msgstr "仿真"
+
+msgid "Siemens"
+msgstr "西门子"
+
+msgid "Create a New Project"
+msgstr "新建一个工程"
+
+msgid "Change Project Property"
+msgstr "改变工程属性"
+
+msgid "Open an Existing Project"
+msgstr "打开一个工程"
+
+msgid "Save Project As ..."
+msgstr "另存工程为..."
+
+msgid "Manual"
+msgstr "手动"
+
+msgid "LatchOn"
+msgstr ""
+
+msgid "LatchOff"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "Accumulate"
+msgstr ""
+
+msgid "Wrap"
+msgstr ""
+
+msgid "Stat"
+msgstr ""
+
+msgid "HysterSwitch"
+msgstr ""
+
+msgid "MinOver"
+msgstr ""
+
+msgid "MaxOver"
+msgstr ""
+
+msgid "PosEdge"
+msgstr ""
+
+msgid "NegEdge"
+msgstr ""
+
+msgid "Changed"
+msgstr ""
+
+msgid "Diff"
+msgstr ""
+
+msgid "DiffUint"
+msgstr ""
+
+msgid "UnchangedDuration"
+msgstr ""
+
+msgid "TrueDuration"
+msgstr ""
+
+msgid "TrueOver"
+msgstr ""
+
+msgid "MovAve"
+msgstr ""
+
+msgid "RateOfChange"
+msgstr ""
+
+msgid "RateLimit"
+msgstr ""
+
+msgid "YawErrorAverage"
+msgstr ""
+
+msgid "CountDualPulse"
+msgstr ""
+
+msgid "StateMachines"
+msgstr "状态机"
+
+msgid "Log"
+msgstr "日志信息"
+
+msgid "Warning"
+msgstr "警告信息"
+
+msgid "Forbid Start"
+msgstr "禁止启动"
+
+msgid "Normal Stop"
+msgstr "正常停机"
+
+msgid "Grid Error"
+msgstr "电网故障"
+
+msgid "Fast Stop"
+msgstr "快速停机"
+
+msgid "Battery Stop"
+msgstr "电池收桨"
+
+msgid "Manual Error"
+msgstr "手动故障"
+
+msgid "Turbine Protect"
+msgstr "风机保护"
+
+msgid "Emergency"
+msgstr "紧急停机"
+
+msgid "Auto"
+msgstr "自动"
+
+msgid "Information"
+msgstr "一般信息"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Fault"
+msgstr "错误"
+
+msgid "Cold"
+msgstr "冷复位"
+
+msgid "None"
+msgstr ""
+
+msgid "DisableLoop"
+msgstr ""
+
+msgid "EnableLoop"
+msgstr "使能"
+
+msgid "UpdateLoop"
+msgstr ""
+
+msgid "Loop"
+msgstr ""
+
+msgid "State Machines"
+msgstr "状态机"
+
+msgid "State Filters"
+msgstr "状态过滤"
+
+msgid "Alarm Codes"
+msgstr "状态码"
+
+msgid "Input Outputs"
+msgstr "输入输出"
+
+msgid "Parameters"
+msgstr "参数"
+
+msgid "States"
+msgstr "状态"
+
+msgid "Deriveds"
+msgstr "中间参数"
+
+msgid "Observer"
+msgstr "运行人员"
+
+msgid "Manager"
+msgstr "管理人员"
+
+msgid "Server"
+msgstr "维护人员"
+
+msgid "Developer"
+msgstr "开发人员"
+
+msgid "A"
+msgstr ""
+
+msgid "V"
+msgstr ""
+
+msgid "deg"
+msgstr ""
+
+msgid "degC"
+msgstr ""
+
+msgid "m/s"
+msgstr ""
+
+msgid "rpm"
+msgstr ""
+
+msgid "s"
+msgstr ""
+
+msgid "Kw"
+msgstr ""
+
+msgid "deg/s"
+msgstr ""
+
+msgid "kw/s"
+msgstr ""
+
+msgid "%"
+msgstr ""
+
+msgid "Nm"
+msgstr ""
+
+msgid "KNm"
+msgstr ""
+
+msgid "Nm/s"
+msgstr ""
+
+msgid "KNm/s"
+msgstr ""
+
+msgid "Hz"
+msgstr ""
+
+msgid "m"
+msgstr ""
+
+msgid "UnchangeDuration"
+msgstr ""
+
+msgid "AngleRateOfChange"
+msgstr ""
+
+msgid "YawErrAverage"
+msgstr ""
+
+msgid "Warm"
+msgstr "热复位"
+
+msgid "U1"
+msgstr ""
+
+msgid "S8"
+msgstr ""
+
+msgid "U8"
+msgstr ""
+
+msgid "S16"
+msgstr ""
+
+msgid "U16"
+msgstr ""
+
+msgid "REAL"
+msgstr ""
+
+msgid "S32"
+msgstr ""
+
+msgid "U32"
+msgstr ""
+
+msgid "RequestStop"
+msgstr "请求停机"
+
+msgid "NormalStop"
+msgstr "正常停机"
+
+msgid "TurbineFault"
+msgstr "风机故障"
+
+msgid "Bachman"
+msgstr "巴合曼"
+
+msgid "Mita"
+msgstr "米特"
+
+msgid "Backhoff"
+msgstr "贝褔"
+
+msgid "Project Name:"
+msgstr "工程名"
+
+msgid "Source Dir:"
+msgstr ""
+
+msgid "Destination Dir:"
+msgstr "存放目录"
+
+msgid "Hardware Type:"
+msgstr "硬件类型"
+
+msgid "Author:"
+msgstr "作者"
+
+msgid "E-mail:"
+msgstr "邮箱"
+
+msgid "Version:"
+msgstr "版本号"
+
+msgid "Date:"
+msgstr "日期"
+
+msgid "Company:"
+msgstr "公司"
+
+msgid "Description:"
+msgstr "描述"
+
+msgid "Id:"
+msgstr "编号"
+
+msgid "Name:"
+msgstr "名称"
+
+msgid "Display:"
+msgstr "显示"
+
+msgid "Enable:"
+msgstr "使能"
+
+msgid "ID:"
+msgstr "编号"
+
+msgid "Category:"
+msgstr "类别"
+
+msgid "Category zh_CN:"
+msgstr "中文类别"
+
+msgid "Excecute:"
+msgstr "表达式"
+
+msgid "Exit Condition:"
+msgstr "退出条件"
+
+msgid "Time Out:"
+msgstr "超时时间"
+
+msgid "Time Out Alarm:"
+msgstr "超时报警"
+
+msgid "First Operator:"
+msgstr "第一个操作数"
+
+msgid "Operation:"
+msgstr "运算符"
+
+msgid "Second Operator:"
+msgstr "第二个操作数"
+
+msgid "Next State:"
+msgstr "下一状态"
+
+msgid "Exit Conditions:"
+msgstr "退出条件："
+
+msgid "Logic Operation:"
+msgstr "逻辑运算："
+
+msgid "Left Bracket:"
+msgstr "左括号："
+
+msgid "NOT Logic:"
+msgstr "非逻辑："
+
+msgid "Right Bracket:"
+msgstr "右括号："
+
+msgid "Included Category:"
+msgstr "包括类别："
+
+msgid "Excluded Category:"
+msgstr "排除类别："
+
+msgid "Included State:"
+msgstr "包括状态："
+
+msgid "Excluded State:"
+msgstr "排除状态："
+
+msgid "Data Type:"
+msgstr "数据类型"
+
+msgid "Reset Condition:"
+msgstr "复位条件"
+
+msgid "Initial Value:"
+msgstr "初始值"
+
+msgid "Test Value:"
+msgstr "测试值"
+
+msgid "Calibration:"
+msgstr "定标"
+
+msgid "IO Data Type:"
+msgstr "IO 数据类型"
+
+msgid "IO Address:"
+msgstr "IO 地址"
+
+msgid "Alarm Codes:"
+msgstr "状态码"
+
+msgid "Him Display:"
+msgstr "显示"
+
+msgid "Reset Type:"
+msgstr "复位类型"
+
+msgid "Alarm Level:"
+msgstr "状态码级别"
+
+msgid "Running Alarm Level:"
+msgstr "运行时级别"
+
+msgid "Alarm Category:"
+msgstr "状态码类别"
+
+msgid "State Filter:"
+msgstr "状态过滤"
+
+msgid "Alarm Condition:"
+msgstr "激活条件"
+
+msgid "Expression:"
+msgstr "表达式"
+
+msgid "Filter Type:"
+msgstr "过滤类型"
+
+msgid "Time Parameter:"
+msgstr "时间参数"
+
+msgid "Hyster Off Condition:"
+msgstr "延迟复位条件"
+
+msgid "Hyster On Condition:"
+msgstr "延迟激活条件"
+
+msgid "Item:"
+msgstr ""
+
+msgid "HareWare:"
+msgstr "硬件"
+
+msgid "Min Value:"
+msgstr "最小值"
+
+msgid "Max Value:"
+msgstr "最大值"
+
+msgid "Log Config:"
+msgstr "日志配置"
+
+msgid "View Level:"
+msgstr "查看级别"
+
+msgid "Change Level:"
+msgstr "修改级别"
+
+msgid "Display Location:"
+msgstr "显示位置"
+
+msgid "Display Units:"
+msgstr "显示单位"
+
+msgid "About Project"
+msgstr "关于当前工程"
+
+msgid "Class List"
+msgstr "分类"
+
+msgid "Export Object"
+msgstr "导出对象"
+
+msgid "General Logic Controller Designer"
+msgstr "通用逻辑控制设计器"
+
+msgid "Design General Logic Controller"
+msgstr "设计以状态码和状态机为基础的逻辑控制器"
+
+msgid "Generate Source Code"
+msgstr "生成源代码"
+
+msgid "Generator Source Code"
+msgstr "生成源代码"
+
+msgid "Import Object"
+msgstr "导入对象"
+
+msgid "Input Output Manual"
+msgstr "输入输出手册"
+
+msgid "Object List"
+msgstr "对象"
+
+msgid "Object Manual"
+msgstr "对象手册"
+
+msgid "Open a Exist Project"
+msgstr "打开一个工程"
+
+msgid "OverallDiagram"
+msgstr "总览框图"
+
+msgid "Parameter Manual"
+msgstr "生成参数手册"
+
+msgid "Project Manager"
+msgstr "工程管理器"
+
+msgid "Project Manual"
+msgstr "工程手册"
+
+msgid "Project Properties"
+msgstr "工程属性"
+
+msgid "Property of Project"
+msgstr "工程属性"
+
+msgid "Quit Project"
+msgstr "关闭工程"
+
+msgid "Save Current Project"
+msgstr "保存当前工程"
+
+msgid "Save to a Project"
+msgstr "另存工程为..."
+
+msgid "TotalDiagram"
+msgstr "详细框图"
+
+msgid "_About"
+msgstr "关于"
+
+msgid "_Diagram"
+msgstr "框图"
+
+msgid "_Export"
+msgstr "导出"
+
+msgid "_GenSource"
+msgstr "生成源码"
+
+msgid "_Help"
+msgstr "帮助"
+
+msgid "_IOManual"
+msgstr "IO手册"
+
+msgid "_Import"
+msgstr "导入"
+
+msgid "_Manual"
+msgstr "手册"
+
+msgid "_New"
+msgstr "新建"
+
+msgid "_ObjectManual"
+msgstr "对象手册"
+
+msgid "_OverallDiagram"
+msgstr "总览框图"
+
+msgid "_ParamManual"
+msgstr "参数手册"
+
+msgid "_Project"
+msgstr "工程"
+
+msgid "_Hardware"
+msgstr "硬件"
+
+msgid "Config Hardware"
+msgstr "配置硬件"
+
+msgid "_ProjectManual"
+msgstr "工程手册"
+
+msgid "Question"
+msgstr "确认"
+
+msgid "_Properties"
+msgstr "属性"
+
+msgid "_Recent File"
+msgstr "最近文件"
+
+msgid "_Quit Project"
+msgstr "关闭工程"
+
+msgid "_Quit"
+msgstr "关闭"
+
+msgid "_Save"
+msgstr "保存"
+
+msgid "_Tool"
+msgstr "工具"
+
+msgid "_TotalDiagram"
+msgstr "详细框图"
+
+msgid "_GenStatePic"
+msgstr "状态框图"
+
+msgid "_Build"
+msgstr "编译"
+
+msgid "Save _As..."
+msgstr "另存为..."
+
+msgid "Exit Window"
+msgstr "退出条件"
+
+msgid "Alarm Level"
+msgstr "级别"
+
+msgid "Alarm Category"
+msgstr "类别"
+
+msgid "Reset Type"
+msgstr "复位类型"
+
+msgid "Enable"
+msgstr "使能"
+
+msgid "Coin Variable"
+msgstr "相关变量"
+
+msgid "Coin Parameter"
+msgstr "相关参数"
+
+msgid "Alarm Condition"
+msgstr "激活条件"
+
+msgid "Actived Description"
+msgstr "激活描述"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Object Manual: "
+msgstr "对象手册"
+
+msgid "Alarm"
+msgstr "警告"
+
+msgid "Out of Min"
+msgstr "超过下限"
+
+msgid "Out of Max"
+msgstr "超过上限"
+
+msgid "Time Out"
+msgstr "超时"
+
+msgid "Manuals"
+msgstr "手册"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Invalid Data"
+msgstr "无效数据"
+
+msgid "Build Object"
+msgstr "编译对象"
+
+msgid "_BuildAll"
+msgstr "编译所有"
+
+msgid "Build Project"
+msgstr "编译工程"
+
+msgid "_BuildManual"
+msgstr "编译手册"
+
+msgid "Build Manual"
+msgstr "编译手册"
+
+msgid "_GenManual"
+msgstr "生成手册"
+
+msgid "_CategoryDiagram"
+msgstr "类别"
+
+msgid "_CategoryCircle"
+msgstr "类别"
+
+msgid "Category Circle"
+msgstr "中文类别"
+
+msgid "Destination"
+msgstr "描述"
+
+msgid "IO Address"
+msgstr "IO 地址"
+
+msgid "Object Name:"
+msgstr "对象名"
+
+msgid "Initial Actived:"
+msgstr "激活"
+
+msgid "State Machine:"
+msgstr "状态机"
+
+msgid "Actived Description:"
+msgstr "激活描述"
+
+msgid "Coin Variable:"
+msgstr "相关变量"
+
+msgid "Coin Parameter:"
+msgstr "相关参数"
+
+msgid "Active Value:"
+msgstr "初始激活"
+
+msgid "Alarm Name:"
+msgstr "报警名称"
+
+msgid "Extra Expression:"
+msgstr "额外表达式"
+
+msgid "IO Calibration:"
+msgstr "IO 定标"
+
+msgid "AlarmCategory:"
+msgstr "状态码类别"
+
+msgid "Chinese Display:"
+msgstr "显示"
+
+msgid "English Display:"
+msgstr "显示"
+
+msgid "Chinese Description:"
+msgstr "激活描述"
+
+msgid "English Description:"
+msgstr "描述"
+
+msgid "Generate Manual OK!"
+msgstr "生成手册完成！"
+
+msgid "Already have, Just open?"
+msgstr "已经存在，直接打开？"
+
+msgid "Generate Object Manual of"
+msgstr "生成对象手册 - "
+
+msgid "Generate Project Manual..."
+msgstr "生成工程手册..."
+
+msgid "InputOutputs"
+msgstr "输入输出"
+
+msgid "Project"
+msgstr "工程"
+
+msgid "Generate InputOutput Manual..."
+msgstr "生成输入输出手册..."
+
+msgid "Generate Parameters Manual..."
+msgstr "生成参数手册..."
+
+msgid "Please open a project first!"
+msgstr "请先打开一个工程！"
+
+msgid "The Window System not support this function!"
+msgstr "Window操作系统不支持此功能！"
+
