@@ -14,16 +14,19 @@ ObjectFiles            = $(wildcard Object/*/*.o)
 MainProg               = main.c
 Main                   = imagerecog
 
-makelinux:
-	@echo "Start Make Linux"
 
 PackageListLoop        = $(patsubst %,Source/%/.loop,$(Packages))
 
 ifdef FORWINDOW
 LinkerOption           = $(CLIBS) -lgsl -lgslcblas
+makelinux:
+	@echo "Start Make Linux"
 else
 LinkerOption           = `pkg-config --cflags --libs gtk+-3.0 gmodule-2.0` -lm -lgsl -lgslcblas
 COPTION                = `pkg-config --cflags --libs gtk+-3.0 gmodule-2.0`
+makelinux:
+	@echo "Start Make Linux"
+	@cd Binary; glib-compile-resources resource.xml
 endif
 
 

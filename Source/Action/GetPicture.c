@@ -66,8 +66,7 @@ LoadPicture ( GtkWidget *widget, gpointer data ) {
 	g_free ( cmd );
 	*/
 
-	LoadBmp ( "90-10.bmp" );
-	//LoadBmp ( "new-000.bmp" );
+	LoadBmp ( "new-000.bmp" );
 	gtk_widget_queue_draw ( GetGuiData()->draw );
 }
 
@@ -75,5 +74,7 @@ void
 LoadDefaultPicture () {
 //	LoadBmp ( "init.png" );
 	//LoadBmp ( "new-000.bmp" );
-	LoadBmp ( "90-26.bmp" );
+	LoadBmp ( "90-28.bmp" );
+//	Gaussian ( NULL, NULL );
+//	RawBound01 ( NULL, NULL );
 }
