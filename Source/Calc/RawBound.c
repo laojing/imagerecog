@@ -3,6 +3,8 @@
 
 // 忽略掉四个边的像素点数
 int ignore = 20;
+gint weightlen = 3;
+gfloat weights[] = {10000, 18000, 5000};
 gfloat weight = 10000;
 gfloat huidu = 100;
 gfloat threshold = 10000;
@@ -88,7 +90,7 @@ FindSinglePoint ( gsl_matrix *pic, gsl_matrix* raw, gint width, gint height, gsl
 	gsl_vector_set ( *v1, 2, gsl_matrix_get ( raw, x, y ) );
 	gd->rawlist = g_slist_append ( gd->rawlist, *v1 );
 
-//	printf ( "x:%d y:%d\n", x, y ); fflush ( stdout );
+//	printf ( "w:%d x:%d y:%d\n", width-ignore, x, y ); fflush ( stdout );
 
 	gd->x = y;
 	gd->y = x;
@@ -212,15 +214,18 @@ RawBound01Thread ( gpointer gdata ) {
 		gsl_vector_set ( v1, 2, gsl_matrix_get ( raw, start2, ignore+1 ) );
 		gd->rawlist = g_slist_append ( gd->rawlist, v1 );
 
-		while ( FindSinglePoint( pic, raw, width, height, &v, &v1, gd ) );
-
-		gint mx = 0, my = 0;
-		gint length = g_slist_length ( gd->rawlist );
-		for ( int i=0; i<length; i++ ) {
-			gsl_vector *v = g_slist_nth_data ( gd->rawlist, i );
-			if ( gsl_vector_get(v,1) > my ) {
-				my = gsl_vector_get(v,1);
+		for ( gint w=0; w<weightlen; w++ ) {
+			weight = weights[w];
+			while ( FindSinglePoint( pic, raw, width, height, &v, &v1, gd ) );
+			gint length = g_slist_length ( gd->rawlist );
+			if ( gsl_vector_get ( v1, 1 ) > width - 2*ignore ) break;
+			for ( int i=length-1; i>1; i-- ) {
+				gsl_vector *vv = g_slist_nth_data ( gd->rawlist, i );
+				gd->rawlist = g_slist_remove ( gd->rawlist, vv );
+				gsl_vector_free ( vv );
 			}
+			v = g_slist_nth_data ( gd->rawlist, 0 );
+			v1 = g_slist_nth_data ( gd->rawlist, 1 );
 		}
 		/*
 		printf ( "value:%f\n", gsl_matrix_get ( raw, 1660, 51 ) );

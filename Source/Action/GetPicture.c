@@ -74,7 +74,7 @@ void
 LoadDefaultPicture () {
 //	LoadBmp ( "init.png" );
 	//LoadBmp ( "new-000.bmp" );
-	LoadBmp ( "90-28.bmp" );
-//	Gaussian ( NULL, NULL );
-//	RawBound01 ( NULL, NULL );
+	LoadBmp ( "90-3.bmp" );
+	Gaussian ( NULL, NULL );
+	RawBound01 ( NULL, NULL );
 }

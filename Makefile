@@ -1,4 +1,4 @@
-#FORWINDOW              = TRUE
+FORWINDOW              = TRUE
 
 Packages 		       = \
 	                      Calc \

@@ -14,7 +14,7 @@ function   [xc,yc,R,a] = circfit(x,y)
 %   x^2+y^2+a(1)*x+a(2)*y+a(3)=0
 %
 %  By:  Izhak bucher 25/oct /1991, 
-    x=x(:); y=y(:);
+%    x=x(:); y=y(:);
    a=[x y ones(size(x))]\[-(x.^2+y.^2)];
    xc = -.5*a(1);
    yc = -.5*a(2);

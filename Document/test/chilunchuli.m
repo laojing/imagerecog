@@ -24,6 +24,8 @@ text(xc,yc,sprintf('center (%g , %g );  R=%g',xc,yc,Re))
 p=polyfit(x,y,1);
 pt=polyval(p,x);
 plot(x,pt,'r');hold on;
+
+%%
 while abs(Re-rl)>=8
     x0=[0 0];
     F=@(xcz)([p(1,1)*xcz(1,2)+xcz(1,1)-p(1,1)*yc-xc;

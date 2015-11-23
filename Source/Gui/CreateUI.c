@@ -80,7 +80,7 @@ CreateMenuBar () {
 	gtk_menu_item_set_submenu ( GTK_MENU_ITEM(menu), submenu );
 
 	gtk_menu_shell_append ( GTK_MENU_SHELL(submenu), 
-			CreateMenu("方法01", G_CALLBACK(RawBound01)) );
+			CreateMenu("权重法", G_CALLBACK(RawBound01)) );
 	gtk_menu_shell_append ( GTK_MENU_SHELL(submenu), 
 			gtk_separator_menu_item_new() );
 	gtk_menu_shell_append ( GTK_MENU_SHELL(submenu), 
