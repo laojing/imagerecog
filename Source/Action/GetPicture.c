@@ -25,7 +25,7 @@ LoadBmp ( gchar *name ) {
 	guchar *idata = cairo_image_surface_get_data ( gdata->init );
 	for ( gint row=0; row<gdata->height; row++ ) {
 		for ( gint col=0; col<gdata->width; col++ ) {
-			idata[row*gdata->width+col] = 255 - (pixels + row*gdata->stride + col*channel)[0];
+			idata[row*gdata->stride/channel+col] = 255 - (pixels + row*gdata->stride + col*channel)[0];
 		}
 	}
 	gdata->stride /= channel;
@@ -73,8 +73,10 @@ LoadPicture ( GtkWidget *widget, gpointer data ) {
 void 
 LoadDefaultPicture () {
 //	LoadBmp ( "init.png" );
-	//LoadBmp ( "new-000.bmp" );
 	LoadBmp ( "90-3.bmp" );
 	Gaussian ( NULL, NULL );
-	RawBound01 ( NULL, NULL );
+	RawBound01Thread ( NULL );
+	FineBound01Thread ( NULL );
+//	RawBound01 ( NULL, NULL );
+//	FineBound01 ( NULL, NULL );
 }

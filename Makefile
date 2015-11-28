@@ -1,6 +1,7 @@
-FORWINDOW              = TRUE
+#FORWINDOW              = TRUE
 
 Packages 		       = \
+	                      Lib \
 	                      Calc \
 	                      Action \
 	                      Gui \

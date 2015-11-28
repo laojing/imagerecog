@@ -63,9 +63,10 @@ Gaussian ( GtkWidget *widget, gpointer gdata ) {
 					CAIRO_FORMAT_A8, width, height );
 		cairo_surface_flush ( gd->gauss );
 		data = cairo_image_surface_get_data ( gd->gauss );
+		gint stride = cairo_image_surface_get_stride( gd->gauss );
 		for ( gint row=0; row<height; row++ ) {
 			for ( gint col=0; col<width; col++ ) {
-				data[row*width+col] = gsl_matrix_get ( res, row, col );
+				data[row*stride+col] = gsl_matrix_get ( res, row, col );
 			}
 		}
 		cairo_surface_mark_dirty ( gd->gauss );

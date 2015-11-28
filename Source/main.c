@@ -1,7 +1,4 @@
 #include "main.h"
-#include <gsl/gsl_vector.h>
-#include <gsl/gsl_sf_trig.h>
-#include <gsl/gsl_multiroots.h>
 
 static GuiData *data;
 GuiData* GetGuiData () { return data; }
@@ -25,22 +22,25 @@ void ApplyCss ( GtkWidget *widget ) {
 }
 
 struct rparams {
-	double a;
-	double b;
+	double a00;
+	double a01;
+	double a10;
+	double a11;
 };
+
 int
 rosenbrock_f ( const gsl_vector *x, void *params,
 		       gsl_vector *f ) {
-	double a = ((struct rparams *) params)->a;
-	double b = ((struct rparams *) params)->b;
+	double a00 = ((struct rparams *) params)->a00;
+	double a01 = ((struct rparams *) params)->a01;
+	double a10 = ((struct rparams *) params)->a10;
+	double a11 = ((struct rparams *) params)->a11;
 
 	const double x0 = gsl_vector_get ( x, 0 );
 	const double x1 = gsl_vector_get ( x, 1 );
 
-	//double y0 = a * ( 0.5 - x0 );
-	//double y1 = b * ( gsl_sf_sin(x1) - x0 * x0 );
-	double y0 = ( 2*x0 - x1 - exp(-x0) );
-	double y1 = ( -x0 + 2*x1 - exp(-x1) );
+	double y0 = ( a00*x0 + a01*x1 );
+	double y1 = ( a10*x0 + a11*x1 );
 
 	gsl_vector_set ( f, 0, y0 );
 	gsl_vector_set ( f, 1, y1 );
@@ -78,8 +78,6 @@ main ( int argc, char **argv ) {
 	gsl_vector_set ( x, 0, x_init[0] );
 	gsl_vector_set ( x, 1, x_init[1] );
 
-	T = gsl_multiroot_fsolver_hybrids;
-	s = gsl_multiroot_fsolver_alloc ( T, 2 );
 	gsl_multiroot_fsolver_set ( s, &f, x );
 
 	print_state ( iter, s );
@@ -156,6 +154,8 @@ main ( int argc, char **argv ) {
 	data->sRaw = "";
 	data->sFine = "";
 	LoadDefaultPicture ();
+
+	TestPolyFit ();
 
 	gtk_widget_set_events ( draw, gtk_widget_get_events ( draw ) 
 			| GDK_LEAVE_NOTIFY_MASK 

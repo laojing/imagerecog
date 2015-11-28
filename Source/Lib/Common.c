@@ -6,7 +6,7 @@ DispVector ( gsl_vector *v ) {
 		printf ( "%7.4f\t", gsl_vector_get ( v, i ) );
 	}
 	printf ( "\n" );
-	//fflush ( stdout );
+	fflush ( stdout );
 }
 
 void
@@ -21,7 +21,16 @@ DispMatrix ( gsl_matrix *m ) {
 	printf ( "\n" );
 	printf ( "\n" );
 	printf ( "\n" );
-	//fflush ( stdout );
+	fflush ( stdout );
+}
+
+float
+VectorSum ( gsl_vector *v ) {
+	float sum = 0;
+	for ( int i=0; i<v->size; i++ ) {
+		sum += gsl_vector_get ( v, i );
+	}
+	return sum;
 }
 
 float
@@ -65,3 +74,4 @@ void
 DestroyVectorList ( gpointer v ) {
  	gsl_vector_free ( (gsl_vector*)v );
 }
+

@@ -12,6 +12,9 @@
 #include <gtk/gtk.h>
 #include <gsl/gsl_vector.h>
 #include <gsl/gsl_matrix.h>
+#include <gsl/gsl_sf_trig.h>
+#include <gsl/gsl_multiroots.h>
+#include <gsl/gsl_linalg.h>
 
 GtkWidget* CreateMenuBar ();
 GtkWidget* CreateToolBar ();
@@ -46,6 +49,12 @@ struct _GuiData
 	cairo_surface_t *gauss; 
 	cairo_surface_t *raw; 
 	cairo_surface_t *fine; 
+	gsl_vector *toothtipx;
+	gsl_vector *toothtipy;
+	gsl_vector *toothrootx;
+	gsl_vector *toothrooty;
+	gsl_vector *toothprofilex;
+	gsl_vector *toothprofiley;
 	gchar *sInit;
 	gchar *sGauss;
 	gchar *sRaw;
@@ -65,15 +74,22 @@ void CloseWindow ( GtkWidget *widget, gpointer data );
 
 void DispVector ( gsl_vector *v );
 void DispMatrix ( gsl_matrix *m );
+float VectorSum ( gsl_vector *v );
 float MatrixSum ( gsl_matrix *x );
 gsl_matrix* Convolution ( gsl_matrix *A, gsl_matrix *B );
 void DestroyVectorList ( gpointer v );
+
+gsl_vector* PolyFit ( gsl_vector *x, gsl_vector *y, gint n );
+gsl_vector* CircleFit ( gsl_vector *x, gsl_vector *y );
+void TestPolyFit ();
 
 void Gaussian ( GtkWidget *widget, gpointer gdata );
 void RawBound01 ( GtkWidget *widget, gpointer gdata );
 void RawBound02 ( GtkWidget *widget, gpointer gdata );
 void FineBound01 ( GtkWidget *widget, gpointer gdata );
 void FineBound02 ( GtkWidget *widget, gpointer gdata );
+gboolean RawBound01Thread ( gpointer gdata );
+gboolean FineBound01Thread ( gpointer gdata );
 
 gboolean
 MouseMove ( 

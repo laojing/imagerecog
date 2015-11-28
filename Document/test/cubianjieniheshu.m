@@ -6,19 +6,23 @@ yy = 0;
 p1=polyfit(linesf(:,2),linesf(:,1),3);
 pt1=polyval(p1,linesf(:,2));
 plot(linesf(:,1),linesf(:,2),'.',pt1,linesf(:,2),'r');hold on;
+
 tt=(T+1)/2;
 i=1;j=tt;
 n=size(linesf);
 yy(i,j)=linesf(1,2);
 K=(linesf(1,1)-linesf(n(1,1),1))/(linesf(1,2)-linesf(n(1,1),2));
 xx(i,j)=p1(1)*yy(i,j).^3+p1(2)*yy(i,j).^2+p1(3)*yy(i,j)+p1(4);
+
 while yy(i,j)<=linesf(n(1,1),2)
-yd(i,j)=3*p1(1)*yy(i,j).^2+2*p1(2)*yy(i,j)+p1(3);
-dtx(i)=sqrt(A^2/(1+yd(i,j)^2));
-yy(i+1,j)=yy(i,j)+dtx(i);
-xx(i+1,j)=p1(1)*yy(i+1,j).^3+p1(2)*yy(i+1,j).^2+p1(3)*yy(i+1,j)+p1(4);
-i=i+1;
+	yd(i,j)=3*p1(1)*yy(i,j).^2+2*p1(2)*yy(i,j)+p1(3);
+	dtx(i)=sqrt(A^2/(1+yd(i,j)^2));
+	yy(i+1,j)=yy(i,j)+dtx(i);
+	xx(i+1,j)=p1(1)*yy(i+1,j).^3+p1(2)*yy(i+1,j).^2+p1(3)*yy(i+1,j)+p1(4);
+	i=i+1;
 end
+
+
   while yy(i,j)>=linesf(n(1,1),2)
 yd(i,j)=3*p1(1)*yy(i,j).^2+2*p1(2)*yy(i,j)+p1(3);
 dtx(i)=sqrt(A^2/(1+yd(i,j)^2));
